@@ -1,0 +1,33 @@
+* { padding: 0; margin: 0; }
+
+html, body {
+  font-family: "Helvetica Neue", Sukhumvit Set , sans-serif; }
+
+/* End of global variables */
+.main {
+  width: 100vw;
+  height: 140vh;
+  background: #f2f2f2; }
+
+.nav {
+  position: absolute;
+  width: 100%;
+  top: 2rem;
+  text-align: center; }
+
+.nav li {
+  font-size: 16px;
+  color: #333;
+  font-weight: 100;
+  display: inline;
+  margin: 0 1rem 0 1rem; }
+
+.nav > .brand_name {
+  font-weight: 400;
+  text-transform: uppercase; }
+
+/* End of Main */
+.content1 {
+  width: 100vw;
+  height: 100vh;
+  background: #525961; }
