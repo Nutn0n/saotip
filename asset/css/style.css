@@ -108,9 +108,11 @@ ul,li{
 /* End of Main */
 .content1 {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   background: #525961;
   text-align: center;
+  box-sizing: border-box;
+  padding-bottom: 3rem;
 }
 
 .content1 > h1{
@@ -121,6 +123,61 @@ ul,li{
   color: #f2f2f2;
   width: 60%;
   margin: auto;
+  margin-bottom: 4rem;
+}
+
+.diagram{
+  width: auto;
+  height: auto;
+  position: relative;
+  margin: auto;
+}
+
+.circle{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: 500px;
+  background: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+}
+
+.circle h1{
+  position: absolute;
+  top: 50%;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-weight: 200;
+}
+
+.circle:first-child h1{
+  color: #333;
+}
+
+.circle1{
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 10;
+}
+
+.circle2{
+  margin-left: -4rem;
+}
+
+.circle3{
+  margin-top: -90px;
+}
+
+.slogan{
+  margin-top: 1rem;
+  font-weight: 300;
+  color: white;
+}
+
+.slogan li{
+  display: inline;
+  padding: 1rem;
 }
 
 /* End of Content1 */
