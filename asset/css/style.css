@@ -2,6 +2,8 @@
 
 html, body {
   font-family: "Prompt", Sukhumvit Set , sans-serif;
+  text-rendering: optimizeLegibility;
+-webkit-font-smoothing: antialiased;
 }
 
 a{
@@ -52,6 +54,7 @@ ul,li{
   text-decoration: none;
 }
 
+
 /* End of global variables */
 .main {
   width: 100vw;
@@ -62,17 +65,32 @@ ul,li{
 }
 
 .nav {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  top: 2rem;
-  text-align: center; }
+  top: 0;
+  padding:1rem 0 1rem 0;
+  text-align: center;
+  z-index:999;
+  background-color:#fff;
+}
 
 .nav li {
-  font-size: 16px;
-  color: #333;
-  font-weight: 100;
   display: inline;
-  margin: 0 1rem 0 1rem; }
+  margin: 0 1rem 0 1rem;
+}
+
+  .nav li a {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  }
+
+  .nav li a:hover {
+
+  color: #E10000;
+  font-size: 16px;
+  font-weight: 400;
+  }
 
 .nav > .brand_name {
   font-weight: 400;
@@ -81,9 +99,9 @@ ul,li{
 
 .hero-img{
   position: absolute;
-  z-index: 0;
   bottom: 0;
   width: 100%;
+  z-index:1;
 }
 
 .hero-wrapper{
@@ -95,14 +113,25 @@ ul,li{
   z-index: 2;
 }
 
+.crane {
+  z-index:-1;
+  bottom:0px;
+  opacity:0.5;
+  transform:translateX(25vw);
+}
+
+
 .hero-wrapper > h1{
   font-weight: 200;
   font-size: 60px;
+  letter-spacing: 4px;
+  color:#333;
 }
 
 .hero-wrapper > h2{
   font-weight: 100;
   font-size: 28px;
+  color:#666;
 }
 
 /* End of Main */
@@ -122,7 +151,10 @@ ul,li{
 .content1 > p{
   color: #f2f2f2;
   width: 60%;
+  font-size:23px;
+  line-height: 34px;
   margin: auto;
+<<<<<<< HEAD
   margin-bottom: 4rem;
 }
 
@@ -178,6 +210,9 @@ ul,li{
 .slogan li{
   display: inline;
   padding: 1rem;
+=======
+  opacity: 0.8;
+>>>>>>> origin/master
 }
 
 /* End of Content1 */
@@ -195,6 +230,11 @@ ul,li{
 .content2 h1{
   padding-top: 6rem;
   position: relative;
+  color:#333;
+}
+
+.content2 h2{
+  color:#666;
 }
 
 /* End of Content2 */
