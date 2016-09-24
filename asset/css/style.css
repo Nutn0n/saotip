@@ -59,9 +59,9 @@ ul,li{
 .main {
   width: 100vw;
   height: 150vh;
-  background: #fff;
+  background: #fafafa;
   position: relative;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .nav {
@@ -71,7 +71,8 @@ ul,li{
   padding:1rem 0 1rem 0;
   text-align: center;
   z-index:999;
-  background-color:#fff;
+  background-color: rgba(255, 255, 255, .8);
+  -webkit-backdrop-filter: saturate(180%) blur(20px)
 }
 
 .nav li {
@@ -104,6 +105,11 @@ ul,li{
   z-index:1;
 }
 
+.hero-img:hover{
+  transform: translateY(20px);
+  transform: translateZ(5);
+}
+
 .hero-wrapper{
   position: absolute;
   width: 100%;
@@ -119,6 +125,8 @@ ul,li{
   opacity:0.5;
   transform:translateX(25vw);
 }
+
+
 
 
 .hero-wrapper > h1{
@@ -172,6 +180,12 @@ ul,li{
   border-radius: 500px;
   background: rgba(0, 0, 0, 0.6);
   display: inline-block;
+  transition: -webkit-transform 2s ease-out;
+  transition: transform 2s ease-out;
+}
+
+.circle:hover {
+  opacity: 0.9;
 }
 
 .circle h1{
