@@ -303,12 +303,14 @@ ul,li{
   display: none;
   width: 100%;
   box-sizing: border-box;
-  padding: 50px 10% 50px 10%;
+  padding: 50px 15% 50px 15%;
   text-align: center;
+  min-height: 280px;
 }
 
 .detailcontent > p{
   font-weight: 200;
+  font-size:18px;
 }
 
 .detailcontent:first-of-type{
@@ -330,9 +332,9 @@ ul,li{
   padding: 15px 30px 15px 30px;
   background: grey;
   margin: 0 -6px 0 -6px;
-  border: 2px solid #666;
+  border: 2px solid #333;
   text-decoration: none;
-  color: #666;
+  color: #333;
   background: #fff;
 }
 
@@ -347,7 +349,7 @@ ul,li{
 }
 
 .active{
-  background: #666;
+  background: #333;
   color: #fff;
 }
 
