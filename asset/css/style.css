@@ -65,6 +65,7 @@ ul,li{
 }
 
 .nav {
+  transition: ease 0.5s;
   position: fixed;
   width: 100%;
   top: 0;
@@ -81,13 +82,14 @@ ul,li{
 }
 
   .nav li a {
+      transition: ease 0.5s;
   color: #333;
   font-size: 16px;
   font-weight: 400;
   }
 
   .nav li a:hover {
-
+  transition: ease 0.5s;
   color: #E10000;
   font-size: 16px;
   font-weight: 400;
@@ -245,6 +247,17 @@ ul,li{
   height:100vh;
   position: relative;
   text-align: center;
+transition: ease 0.5s;
+}
+
+.showcase:hover {
+transition: ease 0.5s;
+  background-color:#666;
+  width: 100%;
+  height:100vh;
+  position: relative;
+  text-align: center;
+  z-index: -99;
 }
 
 .showcase p {
@@ -306,11 +319,13 @@ ul,li{
   padding: 50px 15% 50px 15%;
   text-align: center;
   min-height: 280px;
+  transition: .2s ease;
 }
 
 .detailcontent > p{
   font-weight: 200;
   font-size:18px;
+  transition: .2s ease;
 }
 
 .detailcontent:first-of-type{
@@ -336,16 +351,19 @@ ul,li{
   text-decoration: none;
   color: #333;
   background: #fff;
+  transition: .2s ease;
 }
 
 .tab > li:first-of-type > .detaillink{
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+transition: .2s ease;
 }
 
 .tab > li:last-of-type > .detaillink{
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  transition: .2s ease;
 }
 
 .active{
@@ -467,10 +485,13 @@ ul,li{
   width: 60vw;
   min-width: 300px;
   margin-bottom: 5rem;
+    font-weight: 200;
 }
 
 .content3 > .headline{
   margin-bottom: 0;
+  color:#333;
+  font-weight: 200;
 }
 
 .works{
@@ -502,6 +523,7 @@ ul,li{
 }
 
 .works-icon{
+  width: 300px;
   line-height: 20px;
   position: relative;
 }
@@ -510,6 +532,7 @@ ul,li{
   position: absolute;
   top: 50%;
   left: 50%;
+    width: 300px;
   transform: translate(-50%,-50%);
 }
 
