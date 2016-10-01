@@ -101,11 +101,13 @@ ul,li{
 }
 
 .logo {
+  cursor: default;
   margin-top: 70px;
   width: 60px;
 }
 
 .hero-img{
+  cursor: default;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -114,6 +116,7 @@ ul,li{
 }
 
 .hero-img:hover{
+  cursor: default;
   transform: translateY(20px);
   transform: translateZ(5);
   transition:  transform ease 1s;
@@ -137,6 +140,7 @@ ul,li{
 
 
 .hero-wrapper > h1{
+  cursor: default;
   font-weight: 200;
   font-size: 60px;
   letter-spacing: 4px;
@@ -153,6 +157,9 @@ ul,li{
 /* End of Main */
 .content1 {
   width: 100vw;
+  z-index: 10;
+  transform: translateY(-2px); /* for resloving 1 pixel bug */
+  border-top: 5px solid #2a2a2a;
   height: auto;
   background: #2A2A2A;
   text-align: center;
@@ -247,7 +254,8 @@ ul,li{
   height:100vh;
   position: relative;
   text-align: center;
-transition: ease 0.5s;
+  transition: ease 0.5s;
+  background-repeat: no-repeat;
 }
 
 .showcase:hover {
