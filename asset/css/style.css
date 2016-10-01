@@ -7,6 +7,7 @@
 
 html, body {
   font-family: "Prompt", Sukhumvit Set , sans-serif;
+  /* Copyright 2016 Cadson Demak, All rights reserved. */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -22,7 +23,7 @@ ul,li{
 /* Font weight reminder = 100,200,300,400 */
 
 .saotip-a{
-  font-family: "Saotip",sans-serif!important;
+  font-family: "Saotip", Kanit , sans-serif !important;   /* Fallback to Kanit  */
   color:#9e0707;
 }
 
@@ -66,6 +67,53 @@ ul,li{
 
 
 /* End of global variables */
+
+
+
+
+/* Contact button */
+
+.contact-button {
+  z-index:99999;
+  cursor: pointer;
+  position: fixed;
+  top:0px;
+  right:10%;
+  display: inline-block;
+  height: 100px;
+  width: 95px;
+  background-color: #AE0000;
+  border-radius: 0px;
+  color:#fff;
+  transition: .2s ease;
+  border: solid 0px #AE0000;
+}
+
+.contact-button:hover {
+  transition: .2s ease;
+  border-top: solid #AE0000 12px;
+}
+
+.contact-button p {
+  padding: 10px 0px 0px 0px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-button p span.contact-us-icon {
+    font-size: 40px;
+    line-height: 20px;
+}
+
+.contact-button p span.contact-us {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/* End contact button */
+
 .main {
   width: 100vw;
   height: 150vh;
@@ -622,4 +670,101 @@ footer > h2 > span{
 
 .copyright > a{
   color: #fff;
+}
+
+/*  Responsive Element */
+
+@media screen and (max-width:800px) {
+
+  body {
+  width: 100vw!important;
+  overflow-x:hidden!important;
+  }
+
+
+  .nav {
+    visibility: hidden;
+  }
+
+  .contact-button {
+    transform: scale(0.8);
+    right:0px;
+    border-radius: 360px;
+  }
+
+  .contact-button:hover {
+    transform: scale(0.81);
+  }
+
+  .showcase {
+    height:50vh;
+    border: none;
+  }
+
+  .showcase p {
+    overflow-y: hidden;
+    display: inline-block;
+    font-size: 14px;
+    position: sticky;
+    bottom:15px;
+    background-color: #2A2A2A;
+    padding: 5px 15px 5px 5px;
+    color:#fff;
+    text-align: left;
+    width: 100%;
+    z-index:9999;
+    margin-left: -30vw;
+  }
+
+  .showcase span {
+    margin-left: 6px;
+  }
+
+  .showcase:hover {
+    height:50vh;
+  }
+
+  .main {
+    height: 100vh;
+  }
+
+  .logo {
+    margin-top: 40vh;
+  }
+
+  .hero-wrapper > h2{
+    font-size: 20px;
+    padding: 0px 15% 0px 15%;
+  }
+
+  .content1 > p{
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .circle1{
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    color:#fff;
+  }
+
+  .circle2{
+    background: rgba(255, 255, 255, 0.7);
+    margin-top: -90px;
+    z-index: 100;
+    margin-left: 0rem;
+    color:#333;
+  }
+
+  .circle3{
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: -90px;
+  }
+
+  .slogan {
+    display: none;
+  }
+
+
+
 }
