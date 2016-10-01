@@ -1,5 +1,10 @@
 * { padding: 0; margin: 0; }
 
+@font-face {
+    font-family: "Saotip";
+    src: url(saotip.otf);
+}
+
 html, body {
   font-family: "Prompt", Sukhumvit Set , sans-serif;
   text-rendering: optimizeLegibility;
@@ -15,6 +20,11 @@ ul,li{
 }
 
 /* Font weight reminder = 100,200,300,400 */
+
+.saotip-a{
+  font-family: "Saotip",sans-serif!important;
+  color:#9e0707;
+}
 
 .headline{
   font-weight: 200;
@@ -75,6 +85,7 @@ ul,li{
   background-color: rgba(255, 255, 255, .8);
   -webkit-backdrop-filter: saturate(180%) blur(20px)
 }
+
 
 .nav li {
   display: inline;
@@ -297,7 +308,7 @@ transition: ease 0.5s;
 .content2{
   width: 100vw;
   height: auto;
-  background: linear-gradient(rgba(255, 255, 255, 0.6),rgba(255, 255, 255, 0.6)),url('../image/truss.jpg') no-repeat;
+  /* background: linear-gradient(rgba(255, 255, 255, 0.6),rgba(255, 255, 255, 0.6)),url('../image/truss.jpg') no-repeat; */
   background-size: cover;
   background-position: 150px 0;
   text-align: center;
