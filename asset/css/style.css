@@ -795,18 +795,18 @@ footer > h2 > a:hover{
   }
 
   .showcase p {
-    overflow-y: hidden;
+    overflow-x: hidden;
     display: inline-block;
     font-size: 14px;
     position: sticky;
     bottom:15px;
     background-color: #2A2A2A;
-    padding: 5px 15px 5px 5px;
+    width:80%;
     color:#fff;
     text-align: left;
-    width: 100%;
+    right:0px;
     z-index:99;
-    margin-left: -30vw;
+    padding: 5px 5px 5px 5px;
   }
 
   .showcase span {
