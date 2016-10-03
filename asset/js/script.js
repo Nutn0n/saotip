@@ -47,3 +47,9 @@ function detailTab(evt, activedetail, dotclass) {
             return document.documentElement.scrollTop + document.body.scrollTop
         }
 }();
+
+$(document).ready(function () {
+  $('#mobile-nav').on('click', function() {
+    $('.mobile-overlay').toggleClass("overlay-active");
+  });
+});

@@ -129,11 +129,86 @@ ul,li{
   top: 0;
   padding:1rem 0 1rem 0;
   text-align: center;
-  z-index:999;
+  z-index:30;
   background-color: rgba(255, 255, 255, .8);
   -webkit-backdrop-filter: saturate(180%) blur(20px)
 }
 
+.mobile-nav{
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #666;
+  z-index: 999;
+  box-sizing: border-box;
+  padding: 5px 20px 5px 20px;
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  border-radius: 3px;
+  background-color:rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  border: 2px solid;
+  border-color: rgba(173, 0, 0, 0);
+}
+
+.mobile-nav:hover{
+  color: #ae0000;
+  border-color: rgba(173, 0, 0, 1);
+  transition: .3s ease-in-out;
+}
+
+.mobile-overlay{
+  z-index: 998;
+  background: #fff;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  opacity: 0;
+  transform: translate3d(0,120%,0);
+  transition: .6s ease-in;
+}
+
+.mobile-overlay > ul > li > a{
+  text-decoration: none;
+  color: #333;
+}
+
+.mobile-overlay > ul{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-overlay > ul > li{
+  padding: 15px 0 15px 0;
+  font-size: 30px;
+  font-weight: 200;
+  color:#666;
+}
+
+.overlay-active{
+  opacity: 1;
+  transform: translate3d(0,0,0);
+  transition: opacity .5s ,transform .9s;
+}
+
+.mobile-overlay ul .brand_name {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.mobile-overlay ul .brand_name:hover {
+  color:#AE0000!important;
+}
+
+.mobile-overlay ul .brand_name span.saotip-a{
+  font-family: "Saotip",sans-serif;
+  color:#AE0000;
+}
 
 .nav li {
   display: inline;
@@ -458,6 +533,8 @@ transition: .2s ease;
   background: #666;
 }
 
+
+
 /* End of Content2 */
 
 .content3{
@@ -646,6 +723,17 @@ footer > h2 > span{
   font-weight: 300;
 }
 
+footer > h2 > a{
+  text-decoration: none;
+  color: #fff;
+  transition: .4s ease-in-out;
+}
+
+footer > h2 > a:hover{
+  font-size: 20px;
+  transition: .4s ease-in-out;
+}
+
 .phone-number li{
   display: inline-block;
   font-size: 23px;
@@ -672,6 +760,7 @@ footer > h2 > span{
   color: #fff;
 }
 
+
 /*  Responsive Element */
 
 @media screen and (max-width:800px) {
@@ -688,7 +777,7 @@ footer > h2 > span{
 
   .contact-button {
     transform: scale(0.8);
-    right:0px;
+    right:1rem;
     border-radius: 360px;
   }
 
@@ -712,7 +801,7 @@ footer > h2 > span{
     color:#fff;
     text-align: left;
     width: 100%;
-    z-index:9999;
+    z-index:99;
     margin-left: -30vw;
   }
 
@@ -767,4 +856,57 @@ footer > h2 > span{
 
 
 
+}
+
+@media screen and (min-width: 800px){
+  .mobile-nav{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .nav{
+    display: none;
+  }
+  .detaillink{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 8px 13px 8px 13px;
+    background: grey;
+    margin: 0 -6px 0 -6px;
+    border: 1px solid #333;
+    text-decoration: none;
+    color: #333;
+    background: #fff;
+    transition: .2s ease;
+    font-size: 12px;
+  }
+  .active{
+    background: #333;
+    color: #fff;
+  }
+  .works{
+    display: flex;
+    position: relative;
+    margin: auto;
+    width: 70vw;
+    min-width: 300px;
+    justify-content: center;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    flex-grow: 2;
+  }
+  .works > div{
+    flex-basis: 30%;
+    margin: 2rem;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .works > div{
+    flex-basis: 100%;
+    margin: 2rem;
+    height: 150px;
+  }
 }
