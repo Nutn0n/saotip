@@ -914,3 +914,91 @@ footer > h2 > a:hover{
     height: 150px;
   }
 }
+
+/* Contact Page */
+
+@keyframes pop-up{
+  0%{
+    transform: scale(.3);
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.contact{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  animation: pop-up .8s;
+  opacity: 1;
+}
+
+#contact-page > .copyright {
+  text-align: center;
+  padding-bottom: 30px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#contact-page > .copyright > a{
+  color: #ae0000;
+}
+
+#email-form{
+  position: absolute;
+  width: 40%;
+  min-width: 350px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#email-form > *{
+  width: 100%;
+  border: 0;
+  outline-width: 0;
+}
+
+#email-form > input:first-of-type{
+  border-bottom: 2px solid #666;
+  transition: .2s ease-in-out;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding-bottom: 5px;
+}
+
+#email-form > input:focus{
+  border-bottom: 2px solid #ae0000;
+  transition: .2s ease-in-out;
+}
+
+#email-form > textarea{
+  resize: vertical;
+  height: 200px;
+  max-height: 400px;
+  box-sizing: border-box;
+  padding: 10px 0 5px 0;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+#email-form > input:last-child{
+  width: 100px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 13px 5px 13px 5px;
+  color: #fff;
+  background: #333;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+#email-form > input:last-child:hover{
+  background: #ae0000;
+  transition: .3s ease-in-out;
+}
