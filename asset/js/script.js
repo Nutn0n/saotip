@@ -52,6 +52,7 @@ $(document).ready(function () {
   $('#mobile-nav').on('click', function() {
     $('.mobile-overlay').toggleClass("overlay-active");
   });
+  /* When mouse is out : Remove active class
   $('.time-wrapper').mouseout(function() {
     $('.timeline-fill').removeClass("timeline-active");
     $('.timeline-fill').addClass("timeline-unactive");
@@ -61,7 +62,45 @@ $(document).ready(function () {
       var that = $( this );
       that.dequeue();
     });
-  })
+  })*/
+
+  /* When scroll to timeline  : add active class */
+  $(window).scroll(function() {
+   var hT = $('.time-wrapper').offset().top,
+       hH = $('.time-wrapper').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if (wS > (hT+hH-wH)){
+     $('.timeline-fill').removeClass("timeline-unactive");
+     $('.timeline-fill').addClass("timeline-active");
+     $('.date-1').addClass("date-active");
+     $('.date-2').delay(1000).queue(function(){
+       $('.date-2').addClass("date-active");
+       var that = $( this );
+       that.dequeue();
+     });
+   }
+
+   /* Count animation
+   function animateValue(id, start, end, duration) {
+     var range = end - start;
+     var current = start;
+     var increment = end > start? 1 : -1;
+     var stepTime = Math.abs(Math.floor(duration / range));
+     var obj = document.getElementById(id);
+     var timer = setInterval(function() {
+         current += increment;
+         obj.innerHTML = current;
+         if (current == end) {
+             clearInterval(timer);
+         }
+     }, stepTime);
+ }
+         animateValue("big-date", 1, 5, 4000);
+*/
+});
+
+  /* When mouse is hover : add active class */
   $('.time-wrapper').mouseover(function() {
     $('.timeline-fill').removeClass("timeline-unactive");
     $('.timeline-fill').addClass("timeline-active");
@@ -72,4 +111,15 @@ $(document).ready(function () {
       that.dequeue();
     });
   })
+
+  /* Replay button */
+  $('.start-timeline').onclick(function () {
+  $('.timeline-fill').removeClass("timeline-unactive");
+  $('.timeline-fill').addClass("timeline-active");
+  });
+
+
+
+
+
 });

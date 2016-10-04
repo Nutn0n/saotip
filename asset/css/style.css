@@ -38,7 +38,7 @@ ul,li{
 }
 
 .sub-headline{
-  font-weight: 100;
+  font-weight: 200;
   font-size: 26px;
 }
 
@@ -287,7 +287,7 @@ ul,li{
 
 .hero-wrapper > h2{
   margin-top: 40px;
-  font-weight: 100;
+  font-weight: 200;
   font-size: 28px;
   color:#999;
 }
@@ -548,13 +548,19 @@ transition: .2s ease;
   text-align: center;
 }
 
+.date-wrapper:hover {
+  cursor: default;
+}
+
 .date-1{
   display: inline-block;
   margin-left: 10%;
+  cursor: default;
 }
 
 .date-2{
   display: inline-block;
+  cursor: default;
 }
 
 .date-active{
@@ -566,7 +572,7 @@ transition: .2s ease;
     transform: scale(1);
   }
   50%{
-    transform: scale(1.1);
+    transform: scale(1.01);
   }
   100%{
     transform: scale(1);
@@ -590,7 +596,7 @@ transition: .2s ease;
 .normal-date{
   display: inline-block;
   color: #666;
-  font-weight: 100;
+  font-weight: 200;
   font-size: 35px;
   line-height: 35px;
   margin-left: 1rem;
@@ -599,7 +605,7 @@ transition: .2s ease;
 
 .normal-date span{
   font-size: 25px;
-  font-weight: 100;
+  font-weight: 200;
   color: #919191;
 }
 
@@ -635,6 +641,25 @@ transition: .2s ease;
 .timeline-unactive{
   animation: untimeline 1s;
   animation-fill-mode: forwards;
+}
+
+.start-timeline {
+  border: none;
+  display: inline;
+  background-color:#fff;
+  margin-top: 20px;
+  font-size: 13px;
+  padding-left: 40px;
+  color:#666;
+  font-family: "Prompt", Sukhumvit Set , sans-serif!important;
+}
+
+.start-timeline:hover {
+  color:#333;
+}
+
+.big-date {
+  width: 30px;
 }
 
 @keyframes timeline{
@@ -770,7 +795,7 @@ footer > .headline{
 }
 
 footer > h2{
-  font-weight: 100;
+  font-weight: 200;
   font-size: 17px;
 }
 
@@ -801,12 +826,12 @@ footer > h2 > a:hover{
 }
 
 .social-network > h1{
-  font-weight: 100;
+  font-weight: 200;
   font-size: 20px;
 }
 
 .copyright{
-  font-weight: 100;
+  font-weight: 200;
   font-size: 14px;
   line-height: 0;
 }
