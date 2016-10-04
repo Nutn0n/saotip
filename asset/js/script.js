@@ -52,7 +52,7 @@ $(document).ready(function () {
   $('#mobile-nav').on('click', function() {
     $('.mobile-overlay').toggleClass("overlay-active");
   });
-  $('#start-timeline').mouseout(function() {
+  $('.time-wrapper').mouseout(function() {
     $('.timeline-fill').removeClass("timeline-active");
     $('.timeline-fill').addClass("timeline-unactive");
     $('.date-1').removeClass("date-active");
@@ -62,7 +62,7 @@ $(document).ready(function () {
       that.dequeue();
     });
   })
-  $('#start-timeline').mouseover(function() {
+  $('.time-wrapper').mouseover(function() {
     $('.timeline-fill').removeClass("timeline-unactive");
     $('.timeline-fill').addClass("timeline-active");
     $('.date-1').addClass("date-active");
