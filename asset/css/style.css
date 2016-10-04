@@ -1006,11 +1006,13 @@ footer > h2 > a:hover{
   font-size: 16px;
   box-sizing: border-box;
   padding-bottom: 5px;
+  outline: none;
 }
 
 #email-form > input:focus{
   border-bottom: 2px solid #ae0000;
   transition: .2s ease-in-out;
+  outline: none;
 }
 
 #email-form > textarea{
@@ -1021,6 +1023,7 @@ footer > h2 > a:hover{
   padding: 10px 0 5px 0;
   font-size: 16px;
   margin-top: 5px;
+  outline: none;
 }
 
 #email-form > input:last-child{
@@ -1033,9 +1036,11 @@ footer > h2 > a:hover{
   background: #333;
   transition: .3s ease-in-out;
   cursor: pointer;
+  outline: none;
 }
 
 #email-form > input:last-child:hover{
   background: #ae0000;
   transition: .3s ease-in-out;
+  outline: none;  
 }
