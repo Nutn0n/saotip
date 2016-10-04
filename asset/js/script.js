@@ -52,4 +52,11 @@ $(document).ready(function () {
   $('#mobile-nav').on('click', function() {
     $('.mobile-overlay').toggleClass("overlay-active");
   });
+  $('#start-timeline').on('click', function() {
+    $('.timeline-fill').toggleClass("timeline-active");
+    $('.date-1').toggleClass("date-active");
+    $('.date-2').delay(800).queue(function(){
+      $('.date-2').toggleClass("date-active");
+    });
+  })
 });

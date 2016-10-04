@@ -557,6 +557,22 @@ transition: .2s ease;
   display: inline-block;
 }
 
+.date-active{
+  animation: date-active 1.3s;
+}
+
+@keyframes date-active {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
 .big-date{
   display: inline-block;
   font-weight: 100;
@@ -597,11 +613,32 @@ transition: .2s ease;
   margin-bottom: 1.5rem;
 }
 
-.timeline hr{
+.timeline-line{
   border: 0;
   height: 2px;
-  background: rgb(180, 180, 180);
+  background: #b4b4b4;
   width: 100%;
+}
+
+.timeline-fill{
+  width: 0;
+  height: 100%;
+  position: relative;
+  background: #ae0000;
+}
+
+.timeline-active{
+  animation: timeline 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes timeline{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
 }
 
 .timeline ul{
