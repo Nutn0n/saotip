@@ -658,8 +658,8 @@ transition: .2s ease;
   color:#333;
 }
 
-.big-date {
-  width: 30px;
+.start-timeline {
+  width: 100%;
 }
 
 @keyframes timeline{
