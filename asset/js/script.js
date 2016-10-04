@@ -52,11 +52,24 @@ $(document).ready(function () {
   $('#mobile-nav').on('click', function() {
     $('.mobile-overlay').toggleClass("overlay-active");
   });
-  $('#start-timeline').on('click', function() {
-    $('.timeline-fill').toggleClass("timeline-active");
-    $('.date-1').toggleClass("date-active");
-    $('.date-2').delay(800).queue(function(){
-      $('.date-2').toggleClass("date-active");
+  $('#start-timeline').mouseout(function() {
+    $('.timeline-fill').removeClass("timeline-active");
+    $('.timeline-fill').addClass("timeline-unactive");
+    $('.date-1').removeClass("date-active");
+    $('.date-2').delay(1000).queue(function(){
+      $('.date-2').removeClass("date-active");
+      var that = $( this );
+      that.dequeue();
+    });
+  })
+  $('#start-timeline').mouseover(function() {
+    $('.timeline-fill').removeClass("timeline-unactive");
+    $('.timeline-fill').addClass("timeline-active");
+    $('.date-1').addClass("date-active");
+    $('.date-2').delay(1000).queue(function(){
+      $('.date-2').addClass("date-active");
+      var that = $( this );
+      that.dequeue();
     });
   })
 });

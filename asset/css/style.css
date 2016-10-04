@@ -632,12 +632,26 @@ transition: .2s ease;
   animation-fill-mode: forwards;
 }
 
+.timeline-unactive{
+  animation: untimeline 1s;
+  animation-fill-mode: forwards;
+}
+
 @keyframes timeline{
   0%{
     width: 0;
   }
   100%{
     width: 100%;
+  }
+}
+
+@keyframes untimeline{
+  0%{
+    width: 100%;
+  }
+  100%{
+    width: 0;
   }
 }
 
@@ -1042,5 +1056,5 @@ footer > h2 > a:hover{
 #email-form > input:last-child:hover{
   background: #ae0000;
   transition: .3s ease-in-out;
-  outline: none;  
+  outline: none;
 }
