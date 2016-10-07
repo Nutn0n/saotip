@@ -113,7 +113,7 @@ $(document).ready(function () {
   })
 
   /* Replay button */
-  $('.start-timeline').onclick(function () {
+  $('.start-timeline').click(function () {
   $('.timeline-fill').removeClass("timeline-unactive");
   $('.timeline-fill').addClass("timeline-active");
   });

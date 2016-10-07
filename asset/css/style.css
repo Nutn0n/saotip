@@ -1077,6 +1077,13 @@ footer > h2 > a:hover{
   color: #ae0000;
 }
 
+.copyright-small > span{
+  display: block;
+}
+.copyright-small > br{
+  display: none;
+}
+
 #email-form{
   position: absolute;
   width: 40%;
@@ -1154,6 +1161,10 @@ footer > h2 > a:hover{
   position: relative;
 }
 
+.hero-profile > div:nth-child(2){
+  overflow: hidden;
+}
+
 .hero-detail{
   position: absolute;
   top: 50%;
@@ -1179,6 +1190,7 @@ footer > h2 > a:hover{
   bottom: 0;
   min-width: 300px;
   right: 0;
+  top: 60px;
 }
 
 .company-description{
@@ -1228,13 +1240,12 @@ footer > h2 > a:hover{
   padding-bottom: 20%;
   background: url('../image/senior_advisor.jpg') no-repeat;
   background-size: cover;
-  margin-top: 30px;
 }
 
 .profile-two-detail{
   height: 100%;
   box-sizing: border-box;
-  padding: 30px;
+  padding: 0 30px 0 30px;
   flex-basis: 80%;
   text-align: justify;
 }
@@ -1319,7 +1330,22 @@ footer > h2 > a:hover{
     font-size: 14px;
     text-align: left;
   }
+  .profile-two{
+    padding: 60px 0 60px 0;
+  }
   .profile-two-detail-break{
     display: block;
+  }
+  .copyright-small{
+    font-size: 14px;
+  }
+  .copyright-small > span{
+    display: none;
+  }
+  .copyright-small > br{
+    display: block;
+  }
+  .space-remove{
+    display: none;
   }
 }
