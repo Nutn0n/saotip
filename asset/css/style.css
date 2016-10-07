@@ -661,6 +661,7 @@ transition: .2s ease;
   padding-left: 40px;
   color:#666;
   font-family: "Prompt", Sukhumvit Set , sans-serif!important;
+  outline: none;
 }
 
 .start-timeline:hover {
