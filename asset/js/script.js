@@ -101,7 +101,7 @@ $(document).ready(function () {
 });
 
   /* When mouse is hover : add active class */
-  $('.time-wrapper').mouseover(function() {
+  $('.timeline').mouseover(function() {
     $('.timeline-fill').removeClass("timeline-unactive");
     $('.timeline-fill').addClass("timeline-active");
     $('.date-1').addClass("date-active");
@@ -114,8 +114,15 @@ $(document).ready(function () {
 
   /* Replay button */
   $('.start-timeline').click(function () {
+  //$('.timeline-fill').removeClass("timeline-unactive");
+  $('.timeline-fill').removeClass("timeline-active");
+  $('.timeline-fill').addClass("timeline-unactive");
   $('.timeline-fill').removeClass("timeline-unactive");
-  $('.timeline-fill').addClass("timeline-active");
+  $('.timeline-fill').delay(1000).queue(function(){
+    $('.timeline-fill').addClass("timeline-active");
+    var that = $( this );
+    that.dequeue();
+  });
   });
 
 
