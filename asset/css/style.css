@@ -51,6 +51,12 @@ a[x-apple-data-detectors] {
   font-size: 26px;
 }
 
+@media screen and (max-width: 800px){
+  .sub-headline{
+    padding: 0 5% 0 5%;
+  }
+}
+
 .description{
   font-weight: 200;
   font-size: 15px;
@@ -879,7 +885,7 @@ footer > h2 > a:hover{
 .copyright{
   font-weight: 200;
   font-size: 14px;
-  line-height: 0;
+  line-height: 28px;
 }
 
 .copyright > a{
