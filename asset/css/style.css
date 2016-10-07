@@ -1031,6 +1031,13 @@ footer > h2 > a:hover{
     padding: 100px 5% 100px 5%;
   }
 
+  .detailcontent{
+
+    padding: 50px 5% 50px 5%;
+    font-size:15px;
+  }
+
+
 
 }
 
