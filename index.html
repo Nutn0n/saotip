@@ -16,6 +16,7 @@ Special Thanks - Cadson Demak for beatufiful typeface.
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="asset/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Prompt:100,200,300,400" rel="stylesheet">
   <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
   <title>SAOTIP</title>
 
@@ -45,29 +46,196 @@ Special Thanks - Cadson Demak for beatufiful typeface.
 
 </head>
 <body>
+  <a class="mobile-nav" id="mobile-nav">menu</a>
+  <div class="mobile-overlay" id="mobile-overlay">
+    <ul>
+      <li class="brand_name"><a href="http://saotip.co.th">s<span class="saotip-a">a</span>otip</a></li>
+      <li><a href="#about">เกี่ยวกับเรา</a></li>
+      <li><a href="/leadership">ผู้บริหาร</a></li>
+      <li><a href="#service">บริการ</a></li>
+      <li><a href="http://saotip.co.th/news">ข่าวสาร</a></li>
+      <li><a href="/contact">ติดต่อเรา</a></li>
+    </ul>
+  </div>
+  <a href="/contact">
+  <div class="contact-button">
+    <p><span class="ion-ios-chatboxes contact-us-icon"></span><br/>
+      <span class="contact-us">ติดต่อเรา</span>
+    </p>
+  </div>
+</a>
 
-
+  <section class="main">
+    <ul class="nav" id="nav">
+      <li class="brand_name"><a href="http://saotip.co.th">saotip</a></li>
+      <li><a href="#about">เกี่ยวกับเรา</a></li>
+      <li><a href="/leadership">ผู้บริหาร</a></li>
+      <li><a href="#service">บริการ</a></li>
+      <li><a href="http://saotip.co.th/newsroom">ข่าวสาร</a></li>
+      <li><a href="/contact">ติดต่อเรา</a></li>
+    </ul>
     <div class="hero-wrapper">
-      <br/>      <br/>      <br/>      <br/>      <br/>      <br/>
+
       <!-- waiting for SVG to replace -->
-      <img class="logo" src="asset/image/logo.png"></img>
+      <img class="logo" src="asset/image/logo.svg"></img>
       <h1>S<span class="saotip-a">A</span>OTIP</h1>
       <!-- end -->
 
-      <h2>เตรียมพบกับหน้าเว็บโฉมใหม่ เร็ว ๆ นี้</h2>
+      <h2>รับเหมาก่อสร้างโรงงาน โกดัง สำนักงาน และอาคาร</h2>
     </div>
-
-    <p style="bottom:10px; font-weight:200; text-align:center; width:100%; position:fixed; color:#999">© 2016 SAOTIP CO,.LTD All Right Reserved</p>
-
+    <img class="hero-img" src="asset/image/hero.png" />
     <!--
     <img class="crane" src="asset/image/crane.png" data-rjs="2" />
   -->
   </section>
+  <section class="content1" id="about">
+    <h1 class="headline">เราคือเสาทิพย์</h1>
+<!--<<<<<<< HEAD-->
+    <p class="description">บริษัท เสาทิพย์ จำกัด ทำธุรกิจเกี่ยวกับรับเหมาก่อสร้างโครงสร้างทางโยธา และสถาปัตยกรรม และติดตั้งงานระบบไฟฟ้า สุขาภิบาล ของโรงงานอุตสาหกรรม อาคารสำนักงานต่าง ๆ และคอนโด ทั้งขนาดเล็กจนถึงขนาดใหญ่ โดยใช้ระบบการจัดการและบริหารโครงการแบบมืออาชีพ ประกอบด้วยวิศวกรจากสาขาต่าง ๆ ทั้งโยธา ไฟฟ้า และเครื่องกล รวมถึงโฟร์แมนที่มากด้วยประสบการณ์ รวมระยะเวลายาวนาน 37 ปี</p>
+    <div class="diagram">
+      <br/>      <br/>      <br/>
+      <div class="circle1 circle"><h1>ซื่อสัตย์<br>จริงใจกับลูกค้า</h1></div>
+      <div class="circle2 circle"><h1>รับผิดชอบ<br>เสร็จตรงเวลา</h1></div>
+      <br><div class="circle3 circle"><h1>ถูกต้อง<br>ตามหลักวิศวกรรม</h1></div>
+        <br/>      <br/>      <br/>
+    </div>
+    <ul class="slogan">
+      <li class="slogan1">มุ่งเน้นงานโดยคำนึงถึงความพึงพอใจของลูกค้าเป็นสำคัญ</li>
+      <li class="slogan2">ซื่อสัตย์กับลูกค้าด้วยราคาที่เป็นธรรม</li>
+      <li class="slogan3">เสร็จตามหลักวิศวกรรมและสถาปัตยกรรม</li>
+    </ul>
+  </section>
+
+  <section class="showcase showcase1">
+    <p><span class="ion-ios-location"></span> โกดังเก็บข้าวสาร และโรงงานหลัก  บ.ชัยทิพย์ จก.</p>
+</p>
+  </section>
+
+  <section class="content2" id="service">
+    <h1 class="headline">บริการของเรา</h1>
+    <h2 class="sub-headline">เรามีประสบการณ์ และ ความชำนาญในการควบคุมโครงการก่อสร้าง</h2>
+    <ul class="tab">
+      <li><a href="javascript:;" id = "link-one" data-id="dot-one" class="detaillink active" onclick="detailTab(event, 'page-one', 'dot-one')">ให้คำปรึกษา</a></li>
+      <li><a href="javascript:;" data-id="dot-two" class="detaillink" onclick="detailTab(event, 'page-two', 'dot-two')">เสนอแบบ</a></li>
+      <li><a href="javascript:;" data-id="dot-three" class="detaillink" onclick="detailTab(event, 'page-three', 'dot-three')">ยื่นเรื่อง</a></li>
+      <li><a href="javascript:;"  data-id="dot-four"class="detaillink" onclick="detailTab(event, 'page-four', 'dot-four')">ส่งมอบ</a></li>
+    </ul>
+    <div id="page-one" class="detailcontent">
+      <p>ให้คำปรึกษาเบื้องต้นเกี่ยวกับการก่อสร้าง พื้นที่ใช้สอยและรูปแบบบ้าน การประเมินราคาเบื้องต้น ระยะเวลาก่อสร้างแบบคร่าว ๆ ข้อตกลงเรื่องการแบ่งงวดการชำระเงิน โดยขั้นตอนนี้ทางบริษัทจะไม่คิดค่าบริการใด ๆ ทั้งสิ้น หลังจากสรุปความต้องการและตกลงทำสัญญากันแล้ว บริษัทจะทำการรวบรวมข้อมูลเพื่อทำการออกแบบเบื้องต้นหรือแก้ไขจากแบบที่ลูกค้าเลือก เพื่อให้ตรงกับความต้องการของลูกค้ามากที่สุด รวมทั้งทำการศึกษาเรื่องข้อกฎหมายต่าง ๆ ที่เกียวข้อง</p>
+    </div>
+    <div id="page-two" class="detailcontent">
+      <p>นำเสนอแบบร่างขั้นต้นและรายการวัสดุก่อสร้างแก่เจ้าของบ้าน และทำการปรับปรุงแก้ไขแบบ ให้ตรงกับความต้องการของลูกค้ามากขึ้น เช่น ต้องการขยายขนาดของห้อง เพิ่มจำนวนห้อง หรือปรับเปลี่ยนวัสดุบางอย่าง เพื่อทำการเขียนแบบอย่างละเอียดต่อไป</p>
+    </div>
+    <div id="page-three" class="detailcontent">
+      <p>เมื่อแบบก่อสร้างแล้วเสร็จ และได้รับการอนุมัติจากเจ้าของบ้านแล้ว ทางบริษัทจะทำการยื่นขออนุญาตปลูกสร้างอาคารกับทางราชการ รวมถึงการขอน้ำประปา ไฟฟ้า เลขที่บ้าน และเริ่มทำการก่อสร้าง โดยตลอดระยะเวลาของการก่อสร้าง บริษัทจะจัดส่งช่างควบคุมงานเข้าประจำพื้นที่ก่อสร้าง พร้อมทั้งให้วิศวกรและสถาปนิกเข้าตรวจงานตามขั้นตอนที่กำหนด</p>
+    </div>
+    <div id="page-four" class="detailcontent">
+      <p>เมื่อการก่อสร้างแล้วเสร็จ ทางบริษัทจะทำการทำความสะอาดพื้นที่ทั้งหมด ก่อนจะทำการส่งมอบบ้านให้กับทางลูกค้า รวมทั้งการรับประกันผลงานตามมาตรฐานของบริษัทให้กับทางลูกค้า โดยทางบริษัทให้ความสำคัญเป็นอย่างยิ่งสำหรับบริการหลังการขาย โดยยินดีให้คำปรึกษาเรื่องการดูแลรักษา หรือซ่อมแซมต่อเติมบ้านให้แก่ลูกค้า แม้จะหมดระยะเวลารับประกันแล้วก็ตาม</p>
+    </div>
+    <ul class="dot-wrapper">
+      <li><div id="dot-one" class="dot"></div></li>
+      <li><div id="dot-two" class="dot"></div></li>
+      <li><div id="dot-three" class="dot"></div></li>
+      <li><div id="dot-four" class="dot"></div></li>
+    </ul>
+  </section>
+  <section class="content3">
+    <div class="time-wrapper">
+      <div class="date-1"><h1 class="big-date" id="big-date">5</h1><h1 class="normal-date"> ปี การรับประกัน<br><span>งานโครงสร้างอาคารและถนน</span></h1></div>
+      <div class="date-2"><h1 id="medium-date" class="medium-date">3</h1><h1 class="normal-date">ปี รับประกัน<br><span>งานสถาปัตยกรรม</span></h1></div>
+      <div class="timeline-wrapper">
+        <div class="timeline">
+          <ul>
+            <li>1 Year</li>
+            <li>2 Years</li>
+            <li>3 Years</li>
+            <li>4 Years</li>
+          </ul><br>
+          <div class="timeline-line">
+            <div class="timeline-fill"></div>
+          </div>
+        </div>
+        <button class="start-timeline" id="start-timeline"><span class="ion-refresh"></span> เล่นซ้ำอีกรอบ</button>
+      </div>
+    </div>
+    <br/>    <br/>    <br/>
+    <h1 class="headline">บริการของเรา</h1>
+    <h2 class="sub-headline">เรามีประสบการณ์ และ ความชำนาญในการควบคุมโครงการก่อสร้าง</h2>
+    <!--<h4 class="little">ไม่เคยมีประวัติทิ้งงานหรือติดแบลคลิสต์ใดๆ</h4>-->
+    <div class="works">
+      <div class="works-icon">
+        <div>
+          <img src="asset/image/factory.png" />
+          <h1>โรงงานอุตสาหกรรม</h1>
+          <h2>FACTORY</h2>
+        </div>
+      </div>
+      <div class="works-icon">
+        <div>
+          <img src="asset/image/warehouse.png" />
+          <h1>โกดังเก็บสินค้า</h1>
+          <h2>WAREHOUSE</h2>
+        </div>
+      </div>
+      <div class="works-icon">
+        <div>
+          <img src="asset/image/office.png" />
+          <h1>อาคารสำนักงาน</h1>
+          <h2>OFFICE BUILDING</h2>
+        </div>
+      </div>
+      <div class="works-icon">
+        <div>
+          <img src="asset/image/house.png" />
+          <h1>ที่พักอาศัย หอพัก</h1>
+          <h2>RESIDENCE BUILDING</h2>
+        </div>
+      </div>
+    </div>
 
 
+    <div class="more-wrapper">
+          <!--
+      <h3>และอื่นๆอีกมากมาย</h3>
+      <a href="#" class="button">ชมผลงาน</a>
+        -->
+    </div>
+  </section>
+
+  <section class="customers">
+    <h1>ได้รับความไว้วางใจจาก</h1>
+    <div class="customers-list">
+      <img src="asset/image/customers/futurepark.png" alt="" />
+      <img src="asset/image/customers/mitrphol.png" alt="" />
+      <img class="wide" src="asset/image/customers/thairat.png" alt="" />
+      <img src="asset/image/customers/cook.png" alt="" />
+    </div>
+  </section>
+
+  <section class="showcase showcase2">
+    <p><span class="ion-ios-location"></span> โกดังเก็บข้าวสาร และโรงงานหลัก  บ.ชัยทิพย์ จก.</p>
+</p>
+  </section>
+
+
+
+  <footer>
+    <h1 class="headline">ติดต่อเรา</h1>
+    <h2>  <a href="maps-link"><span><span class="ion-ios-location"> </span>Google</span> Maps</a></h2>
+    <h3 class="description">23 ซ.รังสิต-นครนายก41 ถ.รังสิต-นครนายก<br>ตำบลประชาธิปัตย์, 12130 อำเภอธัญบุรี จังหวัดปทุมธานี</h3>
+    <ul class="phone-number">
+      <li><span class="ion-ios-telephone"></span> 02-533-0043</li>
+      <li> <span class="ion-ios-telephone"></span> 02-533-0045</li>
+    </ul>
+    <div class="social-network">
+      <h1>พูดคุยกันผ่าน LINE <strong>saotip2521</strong></h1>
+      <img src="asset/image/line.jpg"></img>
+    </div>
+    <h4 class="copyright">© 2016 SAOTIP CO,.LTD All Right Reserved | Designed by <a href="#">@Nutn0n</a> , Coded by <a href="#">@jirattikarntar & <a href="#">@Nutn0n</a></h4>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="asset/js/retina.min.js"></script>
   <script type="text/javascript" src="asset/js/script.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 
 
