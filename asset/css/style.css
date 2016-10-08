@@ -1378,3 +1378,24 @@ footer > h2 > a:hover{
     display: none;
   }
 }
+
+.thankyou {
+  display: inline-block;
+  margin-top: 40px;
+  width: 120px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 13px 5px 13px 5px;
+  color: #fff;
+  background: #333;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  outline: none;
+}
+
+.thankyou:hover {
+  background: #ae0000;
+  transition: .3s ease-in-out;
+  outline: none;
+}
